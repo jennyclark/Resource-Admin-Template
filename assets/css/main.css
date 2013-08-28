@@ -1,0 +1,284 @@
+body {
+  background: #2e2c30;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+#brand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  font-size: 38px;
+  font-weight: thin;
+  text-align: center;
+}
+#brand a {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 10px 0px;
+}
+#userNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 38px;
+}
+#userNav a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  padding: 10px 0px;
+  font-size: 10px;
+}
+#userNav a:hover,
+#userNav a:focus,
+#userNav a:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+#userNav > ul {
+  margin: 0;
+}
+#userNav > ul > li {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+#userNav > ul > li > a {
+  padding: 11px 10px;
+  font-size: 10px;
+}
+#userNav > ul > li b.caret {
+  border-top: 4px solid rgba(255, 255, 255, 0.6);
+}
+#userNav > ul > li ul a {
+  font-size: 12px;
+  color: #333;
+  padding: 10px;
+}
+#userNav > ul > li ul a:hover,
+#userNav > ul > li ul a:focus {
+  background-color: #2e2c30 !important;
+}
+#userNav > ul .label {
+  margin: 4px;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 1px 3px;
+  vertical-align: middle;
+}
+#userNav .dropdown-menu:after {
+  border-bottom: 6px solid #FFFFFF;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 10px;
+  position: absolute;
+  top: -6px;
+  z-index: 10px;
+}
+/* Search bar*/
+#search {
+  position: absolute;
+  top: 6px;
+  left: 225px;
+  /*input{ border-radius: @border-radius;}
+    button{ border-radius: @border-radius;}*/
+
+}
+#search input[type=text],
+#search button {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  border: 0;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px;
+  border-radius: 4px 0px 0px 4px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  -o-border-radius: 4px 0px 0px 4px;
+}
+#search button {
+  border-radius: 0px 4px 4px 0px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  -o-border-radius: 0px 4px 4px 0px;
+  margin-left: -4px;
+}
+/* Sidebar*/
+#sidebar {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 225px;
+}
+#sidebar .sidebar-nav ul > li {
+  border-top: 1px solid #3b393d;
+  border-bottom: 1px solid #232124;
+  font-size: 16px;
+  display: block;
+  position: relative;
+}
+#sidebar .sidebar-nav ul > li > a {
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 10px;
+}
+#sidebar .sidebar-nav ul > li > a i {
+  width: 35px;
+  display: inline-block;
+}
+#sidebar .sidebar-nav ul > li > a:hover,
+#sidebar .sidebar-nav ul > li a:focus,
+#sidebar .sidebar-nav ul > li a:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+#sidebar .sidebar-nav ul > li.active > ul {
+  display: block;
+}
+#sidebar .sidebar-nav > ul > li.collapsible.collapsed > a > i.arrow {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#sidebar .sidebar-nav > ul > li > a > i.arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#sidebar .sidebar-nav > ul > li > a .arrow {
+  font-size: 10px;
+  float: right;
+  margin-top: 4px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -0-transition: 0.3s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+}
+#sidebar ul > li > ul {
+  background-color: #272729;
+  padding: 0;
+}
+#sidebar ul > li > ul > li > a {
+  font-size: 13px;
+  color: #777777;
+  display: block;
+  margin-left: 20px;
+}
+#content {
+  margin-top: 38px;
+  height: auto;
+  background: none repeat scroll 0 0  #eceaef;
+  margin-left: 225px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  min-height: 500px;
+}
+#content #content-header {
+  background-color: #f6f6f6;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #eceaef 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #eceaef 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #eceaef 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #eceaef 100%);
+  min-height: 75px;
+  border-top-left-radius: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  z-index: 20;
+  width: 100%;
+}
+#content #content-header .btn-group {
+  position: absolute;
+  float: right;
+  right: 20px;
+  margin-top: -50px;
+  background-color: rgba(0, 0, 0, 0.035);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+#content #content-header .btn-group .btn {
+  line-height: 18px;
+  font-size: 18px;
+  padding: 12px 16px;
+  color: rgba(0, 0, 0, 0.5);
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #dddddd;
+}
+#content #breadcrumb {
+  background-color: #e4e2e7;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  box-shadow: 0 0 1px #fff;
+  padding-top: 5px;
+  padding-left: 10px;
+  min-height: 35px;
+}
+#content #breadcrumb a {
+  color: #333;
+  padding: 8px 20px 8px 10px !important;
+}
+#content #breadcrumb a.current {
+  font-weight: bold;
+}
+#content .well {
+  margin: 10px;
+  padding: 12px 10px;
+  border: 1px solid #cdcdcd;
+  position: relative;
+  border-radius: 6px;
+}
+/*
+  Footer
+*/
+#footer {
+  color: white;
+  font-weight: 300;
+}
+/*
+  helper classes
+  
+*/
+i {
+  padding: 5px;
+}
+.btn {
+  font-weight: bold;
+}
+.btn-inverse {
+  background-color: #555;
+  border-color: #444;
+}
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active {
+  background-color: #444;
+}
+.btn-inverse,
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active {
+  color: #fff;
+}
